@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/clases_estilo.css">
+    <title>Clases Bootstrap</title>
+</head>
+<body class="bg-light">
+  
+  <div class="d-flex h-100 text-center text-white bg-dark">
+      
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <h3 class="float-md-start mb-0">Clases</h3>
+          <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            <a class="nav-link" href="../index.html#diproru">Proyecto 1</a>
+            <a class="nav-link" href="../index.html#diprordos">Proyecto 2</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <!-- Start tem -->
+    <!-- <footer class="mt-auto text-white-50">
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer> -->
+    
+    
+  </div>
+ <!-- CLASE 9 --> 
+ <div class=" shadow-menu col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+    <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+      <span class="fs-4">Clase 9</span>
+    </a>
+  </header>
+
+  <main>
+    <h1>Utilities</h1>
+    <p class="fs-5 col-md-8"> La API de utilidad es una herramienta basada en Sass para generar clases de utilidad.Nuestra API de utilidad se basa en una serie de mapas y funciones de Sass para generar familias de clases con varias opciones.</p>
+
+    <!-- <div class="mb-5">
+      <a href="../examples/" class="btn btn-primary btn-lg px-4">Download examples</a>
+    </div> -->
+
+    <!-- utilities 1 background -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Background</h2>
+    <p class="fs col-md-8">De forma similar a las clases de color de texto contextual, establece el fondo de un elemento en cualquier clase contextual. Las utilidades de fondo no configuran color, por lo que en algunos casos querrás usar .text-*.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-primary text-white&#34;</span><span class="p">&gt;</span>.bg-primary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-secondary text-white&#34;</span><span class="p">&gt;</span>.bg-secondary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-success text-white&#34;</span><span class="p">&gt;</span>.bg-success<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-danger text-white&#34;</span><span class="p">&gt;</span>.bg-danger<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-warning text-dark&#34;</span><span class="p">&gt;</span>.bg-warning<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-info text-dark&#34;</span><span class="p">&gt;</span>.bg-info<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-light text-dark&#34;</span><span class="p">&gt;</span>.bg-light<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-dark text-white&#34;</span><span class="p">&gt;</span>.bg-dark<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-body text-dark&#34;</span><span class="p">&gt;</span>.bg-body<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-white text-dark&#34;</span><span class="p">&gt;</span>.bg-white<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-transparent text-dark&#34;</span><span class="p">&gt;</span>.bg-transparent<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-primary text-white&#34;</span><span class="p">&gt;</span>.bg-primary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-secondary text-white&#34;</span><span class="p">&gt;</span>.bg-secondary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-success text-white&#34;</span><span class="p">&gt;</span>.bg-success<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-danger text-white&#34;</span><span class="p">&gt;</span>.bg-danger<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-warning text-dark&#34;</span><span class="p">&gt;</span>.bg-warning<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-info text-dark&#34;</span><span class="p">&gt;</span>.bg-info<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-light text-dark&#34;</span><span class="p">&gt;</span>.bg-light<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-dark text-white&#34;</span><span class="p">&gt;</span>.bg-dark<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-body text-dark&#34;</span><span class="p">&gt;</span>.bg-body<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-white text-dark&#34;</span><span class="p">&gt;</span>.bg-white<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-transparent text-dark&#34;</span><span class="p">&gt;</span>.bg-transparent<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-primary text-white&#34;</span><span class="p">&gt;</span>.bg-primary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-secondary text-white&#34;</span><span class="p">&gt;</span>.bg-secondary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-success text-white&#34;</span><span class="p">&gt;</span>.bg-success<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-danger text-white&#34;</span><span class="p">&gt;</span>.bg-danger<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-warning text-dark&#34;</span><span class="p">&gt;</span>.bg-warning<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-info text-dark&#34;</span><span class="p">&gt;</span>.bg-info<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-light text-dark&#34;</span><span class="p">&gt;</span>.bg-light<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-dark text-white&#34;</span><span class="p">&gt;</span>.bg-dark<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-body text-dark&#34;</span><span class="p">&gt;</span>.bg-body<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-white text-dark&#34;</span><span class="p">&gt;</span>.bg-white<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-transparent text-dark&#34;</span><span class="p">&gt;</span>.bg-transparent<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-primary text-white&#34;</span><span class="p">&gt;</span>.bg-primary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-secondary text-white&#34;</span><span class="p">&gt;</span>.bg-secondary<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-success text-white&#34;</span><span class="p">&gt;</span>.bg-success<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-danger text-white&#34;</span><span class="p">&gt;</span>.bg-danger<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-warning text-dark&#34;</span><span class="p">&gt;</span>.bg-warning<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-info text-dark&#34;</span><span class="p">&gt;</span>.bg-info<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-light text-dark&#34;</span><span class="p">&gt;</span>.bg-light<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-dark text-white&#34;</span><span class="p">&gt;</span>.bg-dark<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-body text-dark&#34;</span><span class="p">&gt;</span>.bg-body<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-white text-dark&#34;</span><span class="p">&gt;</span>.bg-white<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-3 mb-2 bg-transparent text-dark&#34;</span><span class="p">&gt;</span>.bg-transparent<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol">
+        <div class="p-3 border border-dark mb-2 bg-primary text-white">.bg-primary</div>
+        <div class="p-3 border border-dark mb-2 bg-secondary text-white">.bg-secondary</div>
+        <div class="p-3 border border-dark mb-2 bg-success text-white">.bg-success</div>
+        <div class="p-3 border border-dark mb-2 bg-danger text-white">.bg-danger</div>
+        <div class="p-3 border border-dark mb-2 bg-warning text-dark">.bg-warning</div>
+        <div class="p-3 border border-dark mb-2 bg-info text-dark">.bg-info</div>
+        <div class="p-3 border border-dark mb-2 bg-light text-dark">.bg-light</div>
+        <div class="p-3 border border-dark mb-2 bg-dark text-white">.bg-dark</div>
+        <div class="p-3 border border-dark mb-2 bg-body text-dark">.bg-body</div>
+        <div class="p-3 border border-dark mb-2 bg-white text-dark">.bg-white</div>
+        <div class="p-3 border border-dark mb-2 bg-transparent text-dark">.bg-transparent</div>
+      </div>
+    </div>
+    
+    <!-- utilities 2 borders -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Borders</h2>
+    <p class="fs col-md-8">Utiliza las utilidades de borde para agregar o eliminar los bordes de un elemento. También para  diseñar rápidamente el borde y el radio del borde de un elemento.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-top&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-end&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-bottom&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-start&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-circle&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+ <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;...&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;rounded-pill&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;...&#34;</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2 text-center">
+        <div class="bd-example bd-example-rounded-utils">
+          <svg class="bd-placeholder-img rounded" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example rounded image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+          <svg class="bd-placeholder-img rounded-top" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example top rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example top rounded image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+          <svg class="bd-placeholder-img rounded-end" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example right rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example right rounded image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+          <svg class="bd-placeholder-img rounded-bottom" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example bottom rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example bottom rounded image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+          <svg class="bd-placeholder-img rounded-start" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Example left rounded image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Example left rounded image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+          <svg class="bd-placeholder-img rounded-circle" width="75" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Completely round image: 75x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Completely round image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">75x75</text></svg>
+          <svg class="bd-placeholder-img rounded-pill" width="150" height="75" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rounded pill image: 150x75" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Rounded pill image</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">150x75</text></svg>
+          </div>
+      </div>
+    </div>
+    
+    <!-- utilities 3 colors -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Colors</h2>
+    <p class="fs col-md-8">Transmite significado a través del color con un puñado de clases de utilidad de color. También incluye soporte para diseñar enlaces con estado hover.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-primary&#34;</span><span class="p">&gt;</span>.text-primary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-secondary&#34;</span><span class="p">&gt;</span>.text-secondary<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-success&#34;</span><span class="p">&gt;</span>.text-success<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-danger&#34;</span><span class="p">&gt;</span>.text-danger<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-warning bg-dark&#34;</span><span class="p">&gt;</span>.text-warning<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-info bg-dark&#34;</span><span class="p">&gt;</span>.text-info<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-light bg-dark&#34;</span><span class="p">&gt;</span>.text-light<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-dark&#34;</span><span class="p">&gt;</span>.text-dark<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-body&#34;</span><span class="p">&gt;</span>.text-body<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-muted&#34;</span><span class="p">&gt;</span>.text-muted<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-white bg-dark&#34;</span><span class="p">&gt;</span>.text-white<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-black-50&#34;</span><span class="p">&gt;</span>.text-black-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-white-50 bg-dark&#34;</span><span class="p">&gt;</span>.text-white-50<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol">
+        <p class="text-primary">.text-primary</p>
+        <p class="text-secondary">.text-secondary</p>
+        <p class="text-success">.text-success</p>
+        <p class="text-danger">.text-danger</p>
+        <p class="text-warning bg-dark">.text-warning</p>
+        <p class="text-info bg-dark">.text-info</p>
+        <p class="text-light bg-dark">.text-light</p>
+        <p class="text-dark">.text-dark</p>
+        <p class="text-body">.text-body</p>
+        <p class="text-muted">.text-muted</p>
+        <p class="text-white bg-dark">.text-white</p>
+        <p class="text-black-50">.text-black-50</p>
+        <p class="text-white-50 bg-dark">.text-white-50</p>
+      </div>
+    </div>
+    <!-- utilities 4 display -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Display</h2>
+    <p class="fs col-md-8">Alterna de manera rápida y responsive el valor de visualización de los componentes.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-block p-2 bg-primary text-white&#34;</span><span class="p">&gt;</span>d-block<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-block p-2 bg-dark text-white&#34;</span><span class="p">&gt;</span>d-block<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <span class="d-block p-2 bg-primary text-white">d-block</span>
+        <span class="d-block p-2 bg-dark text-white">d-block</span>
+      </div>
+    </div>
+    <!-- utilities 5 flex -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Flex</h2>
+    <p class="fs col-md-8">Administra rápidamente el diseño, la alineación y el tamaño de las columnas de la cuadrícula, la navegación, los componentes y más con un conjunto completo de utilidades flexibles responsive.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-row bd-highlight mb-3&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Elemento flex 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Elemento flex 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Elemento flex 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;d-flex flex-row-reverse bd-highlight&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Elemento flex 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Elemento flex 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;p-2 bd-highlight&#34;</span><span class="p">&gt;</span>Elemento flex 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <!-- <div class="col-md-6 bakcol">
+      </div> -->
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div class="p-2 bd-highlight">Elemento flex 1</div>
+        <div class="p-2 bd-highlight">Elemento flex 2</div>
+        <div class="p-2 bd-highlight">Elemento flex 3</div>
+      </div>
+      <div class="d-flex flex-row-reverse bd-highlight">
+        <div class="p-2 bd-highlight">Elemento flex 1</div>
+        <div class="p-2 bd-highlight">Elemento flex 2</div>
+        <div class="p-2 bd-highlight">Elemento flex 3</div>
+      </div>
+    </div>
+    
+    <!-- utilities 6 float -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Float</h2>
+    <p class="fs col-md-8">Estas clases de utilidad hacen flotar un elemento a la izquierda o a la derecha, o deshabilitan la flotación, en función del tamaño actual del viewport mediante la propiedad float de CSS.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-sm-start&#34;</span><span class="p">&gt;</span>Float start en viewports de tamaño SM (small) o superior<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-md-start&#34;</span><span class="p">&gt;</span>Float start en viewports de tamaño MD (medium) o superior<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-lg-start&#34;</span><span class="p">&gt;</span>Float start en viewports de tamaño LG (large) o superior<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;float-xl-start&#34;</span><span class="p">&gt;</span>Float start en viewports de tamaño XL (extra-large) o superior<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="float-start">Float start en todos los tamaños de viewport</div><br>
+        <div class="float-end">Float end en todos los tamaños de viewport</div><br>
+        <div class="float-none">Don't float en todos los tamaños de viewport</div>
+      </div>
+    </div>
+    
+    <!-- utilities 7 interactions -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Interactions</h2>
+    <p class="fs col-md-8">Clases de utilidad que cambian la forma en la que los usuarios interactúan con los contenidos de un sitio web.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>No se puede hacer clic en <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pe-none&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span> <span class="na">aria-disabled</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>este enlace<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pe-auto&#34;</span><span class="p">&gt;</span>Este enlace<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> se puede hacer clic (este es el comportamiento predeterminado).<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pe-none&#34;</span><span class="p">&gt;</span>No se puede hacer clic en <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">&#34;-1&#34;</span> <span class="na">aria-disabled</span><span class="o">=</span><span class="s">&#34;true&#34;</span><span class="p">&gt;</span>este enlace<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> porque la propiedad <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>pointer-events<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span> se hereda de su padre. Sin embargo, <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;pe-auto&#34;</span><span class="p">&gt;</span>este enlace<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> tiene una clase <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>pe-auto<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span> y se puede hacer clic en él.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <p>No se puede hacer clic en <a href="#" class="pe-none" tabindex="-1" aria-disabled="true">este enlace</a>.</p>
+        <p><a href="#" class="pe-auto">Este enlace</a> se puede hacer clic (este es el comportamiento predeterminado).</p>
+        <p class="pe-none">No se puede hacer clic en <a href="#" tabindex="-1" aria-disabled="true">este enlace</a> porque la propiedad <code>pointer-events</code> se hereda de su padre. Sin embargo, <a href="#" class="pe-auto">este enlace</a> tiene una clase <code>pe-auto</code> y se puede hacer clic en él.</p>
+      </div>
+    </div>
+    
+    <!-- utilities 8 opacity -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Opacity</h2>
+    <p class="fs col-md-8">La propiedad opacity establece el nivel de opacidad de un elemento. El nivel de opacidad describe el nivel de transparencia, donde 1 no es transparente en absoluto, .5 es 50% visible y 0 es completamente transparente.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-100&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-75&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-50&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;opacity-25&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="bd-example d-sm-flex">
+          <div class="opacity-100 p-3 m-2 bg-primary text-light fw-bold rounded">100%</div>
+          <div class="opacity-75 p-3 m-2 bg-primary text-light fw-bold rounded">75%</div>
+          <div class="opacity-50 p-3 m-2 bg-primary text-light fw-bold rounded">50%</div>
+          <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- utilities 9 overflow -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Overflow</h2>
+    <p class="fs col-md-8">Ajusta la propiedad overflow sobre la marcha con cuatro valores y clases predeterminados. Estas clases no son responsive de forma predeterminada.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;overflow-auto&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;overflow-hidden&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;overflow-visible&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;overflow-scroll&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="bd-example d-md-flex">
+          <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+          Este es un ejemplo del uso de <code>.overflow-auto</code> en un elemento con dimensiones establecidas de ancho y alto. Por diseño, este contenido se desplazará verticalmente.
+          </div>
+          <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+          Este es un ejemplo del uso de <code>.overflow-hidden</code> en un elemento con dimensiones establecidas de ancho y alto.
+          </div>
+          <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+          Este es un ejemplo del uso de <code>.overflow-visible</code> en un elemento con dimensiones establecidas de ancho y alto.
+          </div>
+          <div class="overflow-scroll p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+          Este es un ejemplo del uso de <code>.overflow-scroll</code> en un elemento con dimensiones establecidas de ancho y alto.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- utilities 10 position -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Position</h2>
+    <p class="fs col-md-8">Utiliza estas utilidades abreviadas para configurar rápidamente la posición de un elemento.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-relative&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-absolute top-0 start-0&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-absolute top-0 end-0&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-absolute top-50 start-50&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-absolute bottom-50 end-50&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-absolute bottom-0 start-0&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;position-absolute bottom-0 end-0&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="bd-example bd-example-position-utils">
+          <div class="position-relative">
+            <div class="position-absolute top-0 start-0"></div>
+            <div class="position-absolute top-0 end-0"></div>
+            <div class="position-absolute top-50 start-50"></div>
+            <div class="position-absolute bottom-50 end-50"></div>
+            <div class="position-absolute bottom-0 start-0"></div>
+            <div class="position-absolute bottom-0 end-0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- utilities 11 shadows -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Shadows</h2>
+    <p class="fs col-md-8">Puedes agregar o eliminar rápidamente una sombra con nuestras clases de utilidad box-shadow. Incluye soporte para .shadow-none y tres tamaños predeterminados (que tienen variables asociadas para que coincidan).</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow-none p-3 mb-5 bg-light rounded&#34;</span><span class="p">&gt;</span>Sin sombra<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow-sm p-3 mb-5 bg-body rounded&#34;</span><span class="p">&gt;</span>Sombra pequeña<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow p-3 mb-5 bg-body rounded&#34;</span><span class="p">&gt;</span>Sombra regular<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;shadow-lg p-3 mb-5 bg-body rounded&#34;</span><span class="p">&gt;</span>Sombra grande<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="shadow-none p-3 mb-5 bg-light rounded">Sin sombra</div>
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Sombra pequeña</div>
+        <div class="shadow p-3 mb-5 bg-body rounded">Sombra regular</div>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Sombra grande</div>
+      </div>
+    </div>
+    
+    <!-- utilities 12 sizing -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Sizing</h2>
+    <p class="fs col-md-8">Crea fácilmente un elemento del mismo ancho o alto con nuestras utilidades de ancho y alto.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;w-25 p-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;background-color: #eee;&#34;</span><span class="p">&gt;</span>Ancho de 25%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;w-50 p-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;background-color: #eee;&#34;</span><span class="p">&gt;</span>Ancho de 50%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;w-75 p-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;background-color: #eee;&#34;</span><span class="p">&gt;</span>Ancho de 75%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;w-100 p-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;background-color: #eee;&#34;</span><span class="p">&gt;</span>Ancho de 100%<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;w-auto p-3&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;background-color: #eee;&#34;</span><span class="p">&gt;</span>Ancho de auto<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="w-25 p-3" style="background-color: rgb(107, 106, 106);">Ancho de 25%</div>
+        <div class="w-50 p-3" style="background-color: rgb(107, 106, 106);">Ancho de 50%</div>
+        <div class="w-75 p-3" style="background-color: rgb(107, 106, 106);">Ancho de 75%</div>
+        <div class="w-100 p-3" style="background-color: rgb(107, 106, 106);">Ancho de 100%</div>
+        <div class="w-auto p-3" style="background-color: rgb(107, 106, 106);">Ancho de auto</div>
+      </div>
+    </div>
+    
+    <!-- utilities 13 spacing -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Spacing</h2>
+    <p class="fs col-md-8">Bootstrap incluye una amplia gama de clases de utilidades de margin, padding y gap para modificar la apariencia de un elemento.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;mx-auto&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 200px;&#34;</span><span class="p">&gt;</span>
+    Elemento centrado
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="mx-auto spac-sty">
+          Elemento centrado
+        </div>
+      </div>
+    </div>
+    
+    <!-- utilities 14 text -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Text</h2>
+    <p class="fs col-md-8">Documentación y ejemplos de utilidades de texto comunes para controlar la alineación, el ajuste, el peso y más.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;badge bg-primary text-wrap&#34;</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;width: 6rem;&#34;</span><span class="p">&gt;</span>
+    Este texto debe ajustarse.
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="badge bg-primary text-wrap txt-sty">
+          Este texto debe ajustarse.
+        </div>
+      </div>
+    </div>
+    
+    <!-- utilities 15 vertical alig -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Vertical alignment</h2>
+    <p class="fs col-md-8">Cambia fácilmente la alineación vertical de los elementos en línea, de bloque en línea, de tabla en línea y de celda de tabla.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+  <span class="p">&lt;</span><span class="nt">table</span> <span class="na">style</span><span class="o">=</span><span class="s">&#34;height: 100px;&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-baseline&#34;</span><span class="p">&gt;</span>baseline<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-top&#34;</span><span class="p">&gt;</span>superior<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-middle&#34;</span><span class="p">&gt;</span>medio<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-bottom&#34;</span><span class="p">&gt;</span>inferior<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-text-top&#34;</span><span class="p">&gt;</span>texto-superior<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;align-text-bottom&#34;</span><span class="p">&gt;</span>texto-inferior<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <table style="height: 100px;">
+          <tbody>
+            <tr>
+              <td class="align-baseline">baseline</td>
+              <td class="align-top">superior</td>
+              <td class="align-middle">medio</td>
+              <td class="align-bottom">inferior</td>
+              <td class="align-text-top">texto-superior</td>
+              <td class="align-text-bottom">texto-inferior</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <!-- utilities 16 visibility -->
+    <hr class="col-3 col-md-2 mb-5">
+    <h2>Visibility</h2>
+    <p class="fs col-md-8">Controla la visibilidad de los elementos, sin modificar su visualización, con las utilidades de visibilidad.</p>
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <!-- <h2>Starter projects</h2> -->
+          <div class="highlight p-1">
+            <pre tabindex="0" class="chroma">
+              <code class="language-html" data-lang="html">
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;visible&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;invisible&#34;</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              </code>
+            </pre>
+          </div>
+        <!-- <ul class="icon-list">
+          <li><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">Bootstrap npm starter</a></li>
+          <li class="text-muted">Bootstrap Parcel starter (coming soon!)</li>
+        </ul> -->
+      </div>
+
+      <div class="col-md-6 bakcol p-2">
+        <div class="border border-dark h-25">
+          <div class="visible">Ejemplo visible</div>
+        </div>
+        <div class="border border-dark h-25">
+          <div class="invisible">Ejemplo visible</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Footer -->
+  <footer class="pt-5 my-5 text-muted border-top">
+    Proyecto Clases Universidad Creativa &middot; &copy; 2022
+  </footer>
+</div>
+</body>
+</html>
